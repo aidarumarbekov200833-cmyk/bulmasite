@@ -6,7 +6,23 @@
     <title>Internet Plans - MercuryNet</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <style>.navbar-item.is-active{color:#00d1b2!important;background-color:transparent!important;border-bottom:3px solid #00d1b2}</style>
+    <style>
+        .navbar-item.is-active{color:#00d1b2!important;background-color:transparent!important;border-bottom:3px solid #00d1b2}
+        
+        /* Скрываем карточки на десктопе */
+        @media screen and (min-width: 1024px) {
+            .mobile-plan-cards {
+                display: none;
+            }
+        }
+        
+        /* Скрываем таблицу на мобильных */
+        @media screen and (max-width: 1023px) {
+            .desktop-plan-table {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar is-white is-fixed-top has-shadow">
@@ -176,91 +192,194 @@
                 </div>
             </div>
 
-            <div class="columns is-centered mt-6">
-                <div class="column is-10 js-fade-in">
-                    <h3 class="title is-3 has-text-centered mb-5">Feature Comparison</h3>
-                    <div class="box">
-                        <table class="table is-fullwidth is-striped is-hoverable">
-                            <thead>
-                                <tr>
-                                    <th>Feature</th>
-                                    <th class="has-text-centered">Essential</th>
-                                    <th class="has-text-centered has-text-primary has-text-weight-bold">Pro</th>
-                                    <th class="has-text-centered">Ultra</th>
-                                    <th class="has-text-centered">Mega</th>
-                                    <th class="has-text-centered">Giga</th>
-                                    <th class="has-text-centered has-text-danger has-text-weight-bold">Business 5G</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Download Speed</td>
-                                    <td class="has-text-centered">300 Mbps</td>
-                                    <td class="has-text-centered has-text-weight-bold">600 Mbps</td>
-                                    <td class="has-text-centered">1 Gbps</td>
-                                    <td class="has-text-centered">1.5 Gbps</td>
-                                    <td class="has-text-centered">2 Gbps</td>
-                                    <td class="has-text-centered has-text-weight-bold">5 Gbps</td>
-                                </tr>
-                                <tr>
-                                    <td>Upload Speed</td>
-                                    <td class="has-text-centered">100 Mbps</td>
-                                    <td class="has-text-centered has-text-weight-bold">300 Mbps</td>
-                                    <td class="has-text-centered">500 Mbps</td>
-                                    <td class="has-text-centered">750 Mbps</td>
-                                    <td class="has-text-centered">2 Gbps</td>
-                                    <td class="has-text-centered has-text-weight-bold">5 Gbps</td>
-                                </tr>
-                                <tr>
-                                    <td>Unlimited Data</td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Included Router</td>
-                                    <td class="has-text-centered">Basic Router</td>
-                                    <td class="has-text-centered has-text-weight-bold">WiFi 6 Router</td>
-                                    <td class="has-text-centered">Mesh WiFi System</td>
-                                    <td class="has-text-centered">Mesh WiFi System</td>
-                                    <td class="has-text-centered">WiFi 7 Router</td>
-                                    <td class="has-text-centered has-text-weight-bold">Dedicated Fiber Line</td>
-                                </tr>
-                                <tr>
-                                    <td>Advanced Security Suite</td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Priority Support</td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
-                                    <td class="has-text-centered has-text-weight-bold">24/7 Business Support</td>
-                                </tr>
-                                <tr>
-                                    <td>Static IP Addresses</td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
-                                    <td class="has-text-centered has-text-weight-bold">5 Included</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-centered mt-6">
+                        <div class="column is-10 js-fade-in">
+                            <h3 class="title is-3 has-text-centered mb-5">Feature Comparison</h3>
+                            
+                            <div class="desktop-plan-table">
+                                <div class="box">
+                                    <div class="table-container">
+                                        <table class="table is-fullwidth is-striped is-hoverable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Feature</th>
+                                                    <th class="has-text-centered">Essential</th>
+                                                    <th class="has-text-centered has-text-primary has-text-weight-bold">Pro</th>
+                                                    <th class="has-text-centered">Ultra</th>
+                                                    <th class="has-text-centered">Mega</th>
+                                                    <th class="has-text-centered">Giga</th>
+                                                    <th class="has-text-centered has-text-danger has-text-weight-bold">Business 5G</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Download Speed</td>
+                                                    <td class="has-text-centered">300 Mbps</td>
+                                                    <td class="has-text-centered has-text-weight-bold">600 Mbps</td>
+                                                    <td class="has-text-centered">1 Gbps</td>
+                                                    <td class="has-text-centered">1.5 Gbps</td>
+                                                    <td class="has-text-centered">2 Gbps</td>
+                                                    <td class="has-text-centered has-text-weight-bold">5 Gbps</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Upload Speed</td>
+                                                    <td class="has-text-centered">100 Mbps</td>
+                                                    <td class="has-text-centered has-text-weight-bold">300 Mbps</td>
+                                                    <td class="has-text-centered">500 Mbps</td>
+                                                    <td class="has-text-centered">750 Mbps</td>
+                                                    <td class="has-text-centered">2 Gbps</td>
+                                                    <td class="has-text-centered has-text-weight-bold">5 Gbps</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Unlimited Data</td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Included Router</td>
+                                                    <td class="has-text-centered">Basic Router</td>
+                                                    <td class="has-text-centered has-text-weight-bold">WiFi 6 Router</td>
+                                                    <td class="has-text-centered">Mesh WiFi System</td>
+                                                    <td class="has-text-centered">Mesh WiFi System</td>
+                                                    <td class="has-text-centered">WiFi 7 Router</td>
+                                                    <td class="has-text-centered has-text-weight-bold">Dedicated Fiber Line</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Advanced Security Suite</td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Priority Support</td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                                    <td class="has-text-centered has-text-weight-bold">24/7 Business Support</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Static IP Addresses</td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                                    <td class="has-text-centered has-text-weight-bold">5 Included</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-plan-cards">
+                                <div class="box mb-4">
+                                    <h4 class="title is-4">Essential</h4>
+                                    <ul>
+                                        <li><strong>Download:</strong> 300 Mbps</li>
+                                        <li><strong>Upload:</strong> 100 Mbps</li>
+                                        <li>Unlimited Data ✓</li>
+                                        <li>Router: Basic</li>
+                                        <li>Security: ✕</li>
+                                        <li>Support: ✕</li>
+                                        <li>Static IP: ✕</li>
+                                    </ul>
+                                    <button class="button is-primary is-outlined is-fullwidth is-rounded modal-trigger mt-3" data-target="modal-get-started">
+                                        Get Started
+                                    </button>
+                                </div>
+
+                                <div class="box mb-4">
+                                    <h4 class="title is-4">Pro</h4>
+                                    <ul>
+                                        <li><strong>Download:</strong> 600 Mbps</li>
+                                        <li><strong>Upload:</strong> 300 Mbps</li>
+                                        <li>Unlimited Data ✓</li>
+                                        <li>Router: WiFi 6</li>
+                                        <li>Security: ✕</li>
+                                        <li>Support: ✓</li>
+                                        <li>Static IP: ✕</li>
+                                    </ul>
+                                    <button class="button is-primary is-fullwidth is-rounded modal-trigger mt-3" data-target="modal-get-started">
+                                        Get Started
+                                    </button>
+                                </div>
+
+                                <div class="box mb-4">
+                                    <h4 class="title is-4">Ultra</h4>
+                                    <ul>
+                                        <li><strong>Download:</strong> 1 Gbps</li>
+                                        <li><strong>Upload:</strong> 500 Mbps</li>
+                                        <li>Unlimited Data ✓</li>
+                                        <li>Router: Mesh System</li>
+                                        <li>Security: ✕</li>
+                                        <li>Support: ✓</li>
+                                        <li>Static IP: ✕</li>
+                                    </ul>
+                                    <button class="button is-primary is-outlined is-fullwidth is-rounded modal-trigger mt-3" data-target="modal-get-started">
+                                        Get Started
+                                    </button>
+                                </div>
+
+                                <div class="box mb-4">
+                                    <h4 class="title is-4">Mega</h4>
+                                    <ul>
+                                        <li><strong>Download:</strong> 1.5 Gbps</li>
+                                        <li><strong>Upload:</strong> 750 Mbps</li>
+                                        <li>Router: Mesh System</li>
+                                        <li>Security: ✓</li>
+                                        <li>Support: ✓</li>
+                                        <li>Static IP: ✕</li>
+                                    </ul>
+                                    <button class="button is-primary is-outlined is-fullwidth is-rounded modal-trigger mt-3" data-target="modal-get-started">
+                                        Get Started
+                                    </button>
+                                </div>
+
+                                <div class="box mb-4">
+                                    <h4 class="title is-4">Giga</h4>
+                                    <ul>
+                                        <li><strong>Download:</strong> 2 Gbps</li>
+                                        <li><strong>Upload:</strong> 2 Gbps</li>
+                                        <li>Router: WiFi 7</li>
+                                        <li>Security: ✓</li>
+                                        <li>Support: ✓</li>
+                                        <li>Static IP: ✕</li>
+                                    </ul>
+                                    <button class="button is-primary is-outlined is-fullwidth is-rounded modal-trigger mt-3" data-target="modal-get-started">
+                                        Get Started
+                                    </button>
+                                </div>
+
+                                <div class="box mb-4">
+                                    <h4 class="title is-4">Business 5G</h4>
+                                    <ul>
+                                        <li><strong>Speed:</strong> 5 Gbps Symmetrical</li>
+                                        <li>Dedicated Fiber Line + SLA</li>
+                                        <li>5 Static IP Addresses</li>
+                                        <li>24/7 Business Support</li>
+                                        <li>Security: ✓</li>
+                                    </ul>
+                                    <button class="button is-danger is-fullwidth is-rounded modal-trigger mt-3" data-target="modal-get-started">
+                                        Contact Sales
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
 
