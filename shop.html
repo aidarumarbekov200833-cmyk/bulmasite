@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - MercuryNet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <style>.navbar-item.is-active{color:#00d1b2!important;background-color:transparent!important;border-bottom:3px solid #00d1b2}</style>
+</head>
+<body>
+    <nav class="navbar is-white is-fixed-top has-shadow">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="./img/logo.png" alt="MercuryNet Logo" style="max-height: none !important; height: 50px !important;">
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu"><span></span><span></span><span></span></a>
+            </div>
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href="plans.html">Plans</a>
+                    <a class="navbar-item is-active" href="shop.html">Shop</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="support.html">Support</a>
+                    <a class="navbar-item" href="contact.html">Contact</a>
+                    <div class="navbar-item">
+                        <button class="button is-primary is-rounded modal-trigger" data-target="modal-get-started"><strong>Get Started</strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-primary py-6">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 has-text-white">Equipment Store</h1>
+                <p class="subtitle is-4 has-text-white-ter">Get the most out of your network with our hardware</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section py-6">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-4 js-fade-in">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="./img/routetrи.jpg" alt="WiFi 6 Router">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-4">MercuryNet WiFi 6</p>
+                            <p class="subtitle is-6">Optimized for Gigabit</p>
+                            <div class="content">
+                                Powerful router for dead-zone-free coverage and gigabit speeds over the air. Essential for Pro plan.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <span class="card-footer-item title is-4">$149.99</span>
+                            <div class="card-footer-item">
+                                <button class="button is-primary is-rounded modal-trigger" data-target="modal-buy-now">Buy Now</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                
+                <div class="column is-4 js-fade-in" style="transition-delay: 100ms;">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="./img/Xiaomi-Mesh-System-AX3000-NE-1.jpg" alt="Mesh System">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-4">Mercury Mesh (2-Pack)</p>
+                            <p class="subtitle is-6">Large Home Coverage</p>
+                            <div class="content">
+                                Seamless coverage for large homes and complex layouts. Smart Wi-Fi switching for best speed.
+                            </div>
+                        </div>
+                         <footer class="card-footer">
+                            <span class="card-footer-item title is-4">$229.99</span>
+                            <div class="card-footer-item">
+                                <button class="button is-primary is-rounded modal-trigger" data-target="modal-buy-now">Buy Now</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                
+                <div class="column is-4 js-fade-in" style="transition-delay: 200ms;">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="./img/8-metriv.-cat-8-ethernet-kabel-40-hbit-s-2000-mhts-sftp-vysokoshvydkisnyi-ekranovanyi-merezhevyi-internet-kabel-lan-73464459087202.jpg" alt="CAT7 Patch Cord">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-4">CAT7 Patch Cord (5m)</p>
+                            <p class="subtitle is-6">High-Speed Connection</p>
+                            <div class="content">
+                                Shielded cable for maximum speed and interference protection up to 10 Gbps.
+                            </div>
+                        </div>
+                         <footer class="card-footer">
+                            <span class="card-footer-item title is-4">$19.99</span>
+                            <div class="card-footer-item">
+                                <button class="button is-primary is-rounded modal-trigger" data-target="modal-buy-now">Buy Now</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-4 js-fade-in" style="transition-delay: 300ms;">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="./img/router216.jpg" alt="WiFi 7 Router">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-4">MercuryNet WiFi 7 Ultra</p>
+                            <p class="subtitle is-6">Next-Gen Multi-Gig Performance</p>
+                            <div class="content">
+                                Future-proof your network with the fastest WiFi standard, supporting 5+ Gbps speeds and extremely low latency.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <span class="card-footer-item title is-4">$299.99</span>
+                            <div class="card-footer-item">
+                                <button class="button is-primary is-rounded modal-trigger" data-target="modal-buy-now">Buy Now</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-4 js-fade-in" style="transition-delay: 400ms;">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="./img/Network Switch000,1000_QL80_.jpg" alt="8-Port Gigabit Switch">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-4">Gigabit Network Switch (8-Port)</p>
+                            <p class="subtitle is-6">Expand Your Wired Network</p>
+                            <div class="content">
+                                Instantly add 7 more wired ports to your network. Plug-and-play, no configuration required. Perfect for home offices.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <span class="card-footer-item title is-4">$59.99</span>
+                            <div class="card-footer-item">
+                                <button class="button is-primary is-rounded modal-trigger" data-target="modal-buy-now">Buy Now</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-4 js-fade-in" style="transition-delay: 500ms;">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="./img/router48.jpg" alt="Fiber Media Converter">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-4">Fiber Optic Converter</p>
+                            <p class="subtitle is-6">Connect Fiber to Ethernet</p>
+                            <div class="content">
+                                Converts the fiber signal to a standard Ethernet port. Required for non-MercuryNet compatible routers.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <span class="card-footer-item title is-4">$89.99</span>
+                            <div class="card-footer-item">
+                                <button class="button is-primary is-rounded modal-trigger" data-target="modal-buy-now">Buy Now</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-4 js-fade-in" style="transition-delay: 600ms;">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="./img/Powerline Adapter Kit48992b606e891b.webp" alt="Powerline Adapters">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-4">Powerline Adapter Kit (2-Pack)</p>
+                            <p class="subtitle is-6">Network Extension Over Power Lines</p>
+                            <div class="content">
+                                Get a reliable wired connection in any room without running new cables. Uses your home's existing electrical wiring.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <span class="card-footer-item title is-4">$79.99</span>
+                            <div class="card-footer-item">
+                                <button class="button is-primary is-rounded modal-trigger" data-target="modal-buy-now">Buy Now</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-4 js-fade-in" style="transition-delay: 700ms;">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="./img/thumbnail_64280.jpg" alt="Fiber Optic Cleaning Kit">
+                            </figure>
+                        </div>
+                        <div class="card-content" style="flex-grow: 1;">
+                            <p class="title is-4">Fiber Optic Cleaning Kit</p>
+                            <p class="subtitle is-6">Essential Maintenance Tool</p>
+                            <div class="content">
+                                Professional kit for safely cleaning fiber end-faces. Essential for maintaining maximum speed and connection quality.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <span class="card-footer-item title is-4">$34.99</span>
+                            <div class="card-footer-item">
+                                <button class="button is-primary is-rounded modal-trigger" data-target="modal-buy-now">Buy Now</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h4 class="title is-5 has-text-white">MercuryNet</h4>
+                    <p class="has-text-grey-light">Lightning-fast fiber internet for modern living.</p>
+                </div>
+                <div class="column is-2">
+                    <h5 class="title is-6 has-text-white">Company</h5>
+                    <ul>
+                        <li><a href="about.html" class="has-text-grey-light">About</a></li>
+                        <li><a href="contact.html" class="has-text-grey-light">Contact</a></li>
+                        <li><a href="#" class="has-text-grey-light">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="column is-2">
+                    <h5 class="title is-6 has-text-white">Support</h5>
+                    <ul>
+                        <li><a href="support.html" class="has-text-grey-light">Help Center</a></li>
+                        <li><a href="#" class="has-text-grey-light">Status</a></li>
+                        <li><a href="#" class="has-text-grey-light">Speed Test</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h5 class="title is-6 has-text-white">Get in Touch</h5>
+                    <ul>
+                        <li><a href="tel:1-800-MERCURY" class="has-text-grey-light icon-text">
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <span>1-800-MERCURY</span>
+                        </a></li>
+                        <li><a href="mailto:support@mercurynet.com" class="has-text-grey-light icon-text">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span>support@mercurynet.com</span>
+                        </a></li>
+                        <li><p class="has-text-grey-light icon-text">
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span>123 Fiber Way, Net City, 90210</span>
+                        </p></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="has-background-grey-dark">
+            <div class="content has-text-centered">
+                <p class="has-text-grey-light">© 2024 MercuryNet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal-get-started">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Get Started with MercuryNet</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <form data-validate="true" novalidate>
+                    <div class="field">
+                        <label class="label">Full Name</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="e.g. Alex Smith" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="email" placeholder="e.g. alex@example.com" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Choose Your Plan</label>
+                        <div class="control has-icons-left">
+                            <div class="select is-fullwidth">
+                                <select>
+                                    <option value="essential">Essential (300 Mbps)</option>
+                                    <option value="pro" selected>Pro (600 Mbps)</option>
+                                    <option value="ultra">Ultra (1 Gbps)</option>
+                                </select>
+                            </div>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-wifi"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" class="button is-primary is-fullwidth mt-5">Sign Me Up!</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+    <div class="modal" id="modal-buy-now">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Confirm Purchase</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <p class="is-size-5">This is a demo. In a real store, this would lead to a checkout page. Clicking "Confirm" will simulate a successful submission.</p>
+                <form data-validate="true" novalidate>
+                    <input type="hidden" value="demo-product" required> 
+                    <button type="submit" class="button is-primary is-fullwidth mt-5">Confirm Purchase (Demo)</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+    <div class="modal" id="modal-success">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Success!</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="content has-text-centered">
+                    <span class="icon is-large has-text-success">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                    </span>
+                    <p class="is-size-4 mt-4">Your request has been submitted.</p>
+                    <p>We'll be in touch shortly (this is a demo).</p>
+                </div>
+            </section>
+            <footer class="modal-card-foot" style="justify-content: center;">
+                <button class="button is-primary is-rounded modal-close-button">Great!</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

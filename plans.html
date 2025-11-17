@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Plans - MercuryNet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <style>.navbar-item.is-active{color:#00d1b2!important;background-color:transparent!important;border-bottom:3px solid #00d1b2}</style>
+</head>
+<body>
+    <nav class="navbar is-white is-fixed-top has-shadow">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="./img/logo.png" alt="MercuryNet Logo" style="max-height: none !important; height: 50px !important;">
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu"><span></span><span></span><span></span></a>
+            </div>
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item is-active" href="plans.html">Plans</a>
+                    <a class="navbar-item" href="shop.html">Shop</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="support.html">Support</a>
+                    <a class="navbar-item" href="contact.html">Contact</a>
+                    <div class="navbar-item">
+                        <button class="button is-primary is-rounded modal-trigger" data-target="modal-get-started"><strong>Get Started</strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-light py-6">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">Simple, Transparent Pricing</h1>
+                <p class="subtitle is-4">No contracts, no hidden fees, no surprises</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section py-6">
+        <div class="container">
+            <div class="columns is-centered pricing-table">
+                <div class="column is-10">
+                    <div class="columns is-variable is-5">
+                        <div class="column js-fade-in">
+                            <div class="box has-text-centered p-6">
+                                <h3 class="title is-4">Essential</h3>
+                                <div class="my-4 p-3 has-text-white" style="border-radius: 6px;">
+                                    <span class="title is-1">$39</span>
+                                    <span class="subtitle is-6">/month</span>
+                                </div>
+                                <ul class="has-text-left mb-5" style="list-style: none; margin-left: 1.5rem;">
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span><strong>300 Mbps</strong> Download</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span><strong>100 Mbps</strong> Upload</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span>Unlimited Data</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span><span>WiFi 6 Router</span></span></li>
+                                </ul>
+                                <button class="button is-primary is-outlined is-fullwidth is-rounded modal-trigger" data-target="modal-get-started">
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="column js-fade-in" style="transition-delay: 100ms;">
+                            <div class="box has-text-centered p-6 has-background-primary has-text-white" style="border: 2px solid #00d1b2;"> 
+                                <div class="tag is-warning is-pulled-right">POPULAR</div>
+                                <h3 class="title is-4 has-text-white">Pro</h3>
+                                <div class="has-text-white my-4">
+                                    <span class="title is-1">$59</span>
+                                    <span class="subtitle is-6">/month</span>
+                                </div>
+                                <ul class="has-text-left mb-5" style="list-style: none; margin-left: 2rem;">
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-white"><i class="fas fa-check"></i></span><span><strong>600 Mbps</strong> Download</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-white"><i class="fas fa-check"></i></span><span><strong>300 Mbps</strong> Upload</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-white"><i class="fas fa-check"></i></span><span>Unlimited Data</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-white"><i class="fas fa-check"></i></span><span>WiFi 6 Router</span></span></li>
+                                </ul>
+                                <button class="button is-white is-fullwidth is-rounded modal-trigger" data-target="modal-get-started">
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="column js-fade-in" style="transition-delay: 200ms;">
+                            <div class="box has-text-centered p-6">
+                                <h3 class="title is-4">Ultra</h3>
+                                <div class="my-4 p-3 has-text-white" style="border-radius: 6px;">
+                                    <span class="title is-1">$89</span>
+                                    <span class="subtitle is-6">/month</span>
+                                </div>
+                                <ul class="has-text-left mb-5" style="list-style: none; margin-left: 1.5rem;">
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span><strong>1 Gbps</strong> Download</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span><strong>500 Mbps</strong> Upload</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span>Unlimited Data</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span>Mesh WiFi System</span></span></li>
+                                </ul>
+                                <button class="button is-primary is-outlined is-fullwidth is-rounded modal-trigger" data-target="modal-get-started">
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns is-variable is-5 mt-6">
+                        <div class="column js-fade-in" style="transition-delay: 300ms;">
+                            <div class="box has-text-centered p-6">
+                                <h3 class="title is-4">Mega</h3>
+                                <div class="my-4 p-3 has-text-white" style="border-radius: 6px;">
+                                    <span class="title is-1">$119</span>
+                                    <span class="subtitle is-6">/month</span>
+                                </div>
+                                <ul class="has-text-left mb-5" style="list-style: none; margin-left: 1.5rem;">
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span><strong>1.5 Gbps</strong> Download</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span><strong>750 Mbps</strong> Upload</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span>Mesh WiFi System</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span>Advanced Security Suite</span></span></li>
+                                </ul>
+                                <button class="button is-primary is-outlined is-fullwidth is-rounded modal-trigger" data-target="modal-get-started">
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="column js-fade-in" style="transition-delay: 400ms;">
+                            <div class="box has-text-centered p-6">
+                                <h3 class="title is-4">Giga</h3>
+                                <div class="my-4 p-3 has-text-white" style="border-radius: 6px;">
+                                    <span class="title is-1">$149</span>
+                                    <span class="subtitle is-6">/month</span>
+                                </div>
+                                <ul class="has-text-left mb-5" style="list-style: none; margin-left: 2rem;">
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span><strong>2 Gbps</strong> Symmetrical</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span>Dedicated Fiber Line</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span>WiFi 7 Router</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span><span>Priority VIP Support</span></span></li>
+                                </ul>
+                                <button class="button is-primary is-outlined is-fullwidth is-rounded modal-trigger" data-target="modal-get-started">
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="column js-fade-in" style="transition-delay: 500ms;">
+                            <div class="box has-text-centered p-6 has-background-danger has-text-white" style="border: 2px solid #ff3860;">
+                                <div class="tag is-light is-pulled-right has-text-black">BUSINESS</div>
+                                <h3 class="title is-4 has-text-white">Business 5G</h3>
+                                <div class="has-text-white my-4">
+                                    <span class="title is-1">$299</span>
+                                    <span class="subtitle is-6 has-text-white">/month</span>
+                                </div>
+                                <ul class="has-text-left mb-5" style="list-style: none; margin-left: 2rem;">
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-white"><i class="fas fa-check"></i></span><span><strong>5 Gbps</strong> Symmetrical</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-white"><i class="fas fa-check"></i></span><span>Dedicated SLA</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-white"><i class="fas fa-check"></i></span><span>5 Static IP Addresses</span></span></li>
+                                    <li><span class="icon-text mb-2"><span class="icon has-text-white"><i class="fas fa-check"></i></span><span>24/7 Priority Business Support</span></span></li>
+                                </ul>
+                                <button class="button is-white is-fullwidth is-rounded modal-trigger" data-target="modal-get-started">
+                                    Contact Sales
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notification is-info is-light mt-6 js-fade-in" style="border-radius: 12px;">
+                <div class="content has-text-centered">
+                    <p class="is-size-5">
+                        <strong>All plans include:</strong> Free installation • No contract • 30-day money-back guarantee
+                    </p>
+                </div>
+            </div>
+
+            <div class="columns is-centered mt-6">
+                <div class="column is-10 js-fade-in">
+                    <h3 class="title is-3 has-text-centered mb-5">Feature Comparison</h3>
+                    <div class="box">
+                        <table class="table is-fullwidth is-striped is-hoverable">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th class="has-text-centered">Essential</th>
+                                    <th class="has-text-centered has-text-primary has-text-weight-bold">Pro</th>
+                                    <th class="has-text-centered">Ultra</th>
+                                    <th class="has-text-centered">Mega</th>
+                                    <th class="has-text-centered">Giga</th>
+                                    <th class="has-text-centered has-text-danger has-text-weight-bold">Business 5G</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Download Speed</td>
+                                    <td class="has-text-centered">300 Mbps</td>
+                                    <td class="has-text-centered has-text-weight-bold">600 Mbps</td>
+                                    <td class="has-text-centered">1 Gbps</td>
+                                    <td class="has-text-centered">1.5 Gbps</td>
+                                    <td class="has-text-centered">2 Gbps</td>
+                                    <td class="has-text-centered has-text-weight-bold">5 Gbps</td>
+                                </tr>
+                                <tr>
+                                    <td>Upload Speed</td>
+                                    <td class="has-text-centered">100 Mbps</td>
+                                    <td class="has-text-centered has-text-weight-bold">300 Mbps</td>
+                                    <td class="has-text-centered">500 Mbps</td>
+                                    <td class="has-text-centered">750 Mbps</td>
+                                    <td class="has-text-centered">2 Gbps</td>
+                                    <td class="has-text-centered has-text-weight-bold">5 Gbps</td>
+                                </tr>
+                                <tr>
+                                    <td>Unlimited Data</td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Included Router</td>
+                                    <td class="has-text-centered">Basic Router</td>
+                                    <td class="has-text-centered has-text-weight-bold">WiFi 6 Router</td>
+                                    <td class="has-text-centered">Mesh WiFi System</td>
+                                    <td class="has-text-centered">Mesh WiFi System</td>
+                                    <td class="has-text-centered">WiFi 7 Router</td>
+                                    <td class="has-text-centered has-text-weight-bold">Dedicated Fiber Line</td>
+                                </tr>
+                                <tr>
+                                    <td>Advanced Security Suite</td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Priority Support</td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-success"><i class="fas fa-check"></i></span></td>
+                                    <td class="has-text-centered has-text-weight-bold">24/7 Business Support</td>
+                                </tr>
+                                <tr>
+                                    <td>Static IP Addresses</td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered"><span class="icon has-text-grey-light"><i class="fas fa-times"></i></span></td>
+                                    <td class="has-text-centered has-text-weight-bold">5 Included</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h4 class="title is-5 has-text-white">MercuryNet</h4>
+                    <p class="has-text-grey-light">Lightning-fast fiber internet for modern living.</p>
+                </div>
+                <div class="column is-2">
+                    <h5 class="title is-6 has-text-white">Company</h5>
+                    <ul>
+                        <li><a href="about.html" class="has-text-grey-light">About</a></li>
+                        <li><a href="contact.html" class="has-text-grey-light">Contact</a></li>
+                        <li><a href="#" class="has-text-grey-light">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="column is-2">
+                    <h5 class="title is-6 has-text-white">Support</h5>
+                    <ul>
+                        <li><a href="support.html" class="has-text-grey-light">Help Center</a></li>
+                        <li><a href="#" class="has-text-grey-light">Status</a></li>
+                        <li><a href="#" class="has-text-grey-light">Speed Test</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h5 class="title is-6 has-text-white">Get in Touch</h5>
+                    <ul>
+                        <li><a href="tel:1-800-MERCURY" class="has-text-grey-light icon-text">
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <span>1-800-MERCURY</span>
+                        </a></li>
+                        <li><a href="mailto:support@mercurynet.com" class="has-text-grey-light icon-text">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span>support@mercurynet.com</span>
+                        </a></li>
+                        <li><p class="has-text-grey-light icon-text">
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span>123 Fiber Way, Net City, 90210</span>
+                        </p></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="has-background-grey-dark">
+            <div class="content has-text-centered">
+                <p class="has-text-grey-light">© 2024 MercuryNet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal-get-started">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Get Started with MercuryNet</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <form data-validate="true" novalidate>
+                    <div class="field">
+                        <label class="label">Full Name</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="e.g. Alex Smith" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="email" placeholder="e.g. alex@example.com" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Choose Your Plan</label>
+                        <div class="control has-icons-left">
+                            <div class="select is-fullwidth">
+                                <select>
+                                    <option value="essential">Essential (300 Mbps)</option>
+                                    <option value="pro" selected>Pro (600 Mbps)</option>
+                                    <option value="ultra">Ultra (1 Gbps)</option>
+                                </select>
+                            </div>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-wifi"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" class="button is-primary is-fullwidth mt-5">Sign Me Up!</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+    <div class="modal" id="modal-success">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Success!</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="content has-text-centered">
+                    <span class="icon is-large has-text-success">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                    </span>
+                    <p class="is-size-4 mt-4">Your request has been submitted.</p>
+                    <p>We'll be in touch shortly (this is a demo).</p>
+                </div>
+            </section>
+            <footer class="modal-card-foot" style="justify-content: center;">
+                <button class="button is-primary is-rounded modal-close-button">Great!</button>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
